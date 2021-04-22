@@ -1,0 +1,17 @@
+{
+  "name": "rockets",
+  "version": "1.0.0",
+  "description": "* [General info](#general-info) * [Technologies](#technologies) * [Setup](#setup)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc-watch": "node_modules/.bin/tsc -w &",
+    "tsc": "node_modules/.bin/tsc"
+  },
+  "keywords": [],
+  "author": "Fabián Flores Vadell",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
