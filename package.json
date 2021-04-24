@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "rockets",
   "version": "1.0.0",
   "description": "* [General info](#general-info) * [Technologies](#technologies) * [Setup](#setup)",

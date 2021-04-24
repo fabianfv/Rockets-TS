@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'AgentOrange';
+    src: url('assets/fonts/AGENTORANGE.TTF');
+}
+
+@font-face {
+    font-family: 'Halo';
+    src: url('assets/fonts/HALO.TTF');
+}
+
+@font-face {
+    font-family: 'Videophreak';
+    src: url('assets/fonts/VIDEOPHREAK.ttf');
+}
+
+body {
+  margin: 0;
+  padding: 2% 5%;
+  height: 90vh;
+  
+  background-image: url(assets/images/space01.jpg);
+  background-size:cover;
+  background-position: center center;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  user-select: none;
+}
+
+.page-title {
+  text-align: center;
+  font-family: 'AgentOrange';
+  font-size: calc(2.5em + 1.5vw);
+  line-height: 150%;
+  margin-bottom: 5%;
+  color: orange;
+}
+
+.rockets-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+@media (min-width: 768px) {
+  .rockets-container {
+    flex-direction: row;
+  }
+}
+
+.card {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: rgba(221, 218, 218, 0.3);
+}
+
+.card__header,
+.card__body,
+.card__footer {
+  padding: 1em;
+}
+
+.card__header {
+  padding: 0.8em 1em;
+  text-align: center;
+  font-family: Videophreak;
+  font-size: 2em;
+}
+
+.card__body {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  font-family: Videophreak;
+  font-size: 1.5em;
+}
+
+.card__footer {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1em;
+}
+
+.btn {
+  --white: rgb(228, 228, 228);
+  --opacity: 0.7;
+  flex: 1 1 0;
+}
+
+.btn {
+  margin: 0 0.5rem;
+  padding: .5rem .8rem;
+  border-radius: 0.313rem;
+  outline: none;
+  cursor: pointer;
+  border: 0.313rem solid transparent;
+  background-color: transparent;
+  font-family: Halo;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+}
+
+.btn--danger {
+  background-color: hsla(12, 100%, 50%, var(--opacity));
+  color: var(--white);
+}
+
+.btn--danger:active {
+  border-color: hsla(12, 100%, 65%, var(--opacity));
+}
+
+.btn--primary {
+  background-color: hsla(216, 98%, 52%, var(--opacity));
+  color: var(--white);
+}
+
+.btn--primary:active {
+  border-color: hsla(216, 98%, 67%, var(--opacity));
+}
+
+.btn--success {
+  background-color: hsla(106, 95%, 33%, var(--opacity));
+  color: var(--white);
+}
+
+.btn--success:active {
+  border-color: hsla(106, 95%, 40%, var(--opacity));
+}
+
+.btn--warning {
+  background-color: hsla(41, 100%, 50%, var(--opacity));
+  color: var(--white);
+}
+
+.btn--warning:active {
+  border-color: hsla(41, 100%, 65%, var(--opacity));
+}
+
