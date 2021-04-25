@@ -80,7 +80,7 @@ class BoosterSystem {
   }
 }
 
-export class Rocket {
+class Rocket {
 
   private boosterSystem: BoosterSystem
 

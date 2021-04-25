@@ -34,11 +34,12 @@ This project is a Typescript practice. Applied concepts:
 
 ## Technologies
 
-Project was created with:
+This project was created with:
 
 - Node version: 14.16.0
 - NPM version: 6.14.9
 - tsc version: 4.2.3
+- VSCode version: 1.55.2
 
 ## Setup
 
@@ -61,7 +62,7 @@ You can transpile TS code to JS in watch mode by doing:
 $ npm run tsc-watch
 ```
 
-To can transpile TS code to JS manually by doing:
+You can transpile TS code to JS manually by doing:
 
 ```
 $ npm run tsc

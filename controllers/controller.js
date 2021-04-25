@@ -1,5 +1,28 @@
-import { Rocket } from '../models/rocket.js';
-const $rocket01 = {
+"use strict";
+/*
+const rocketA = new Rocket("32WESSDS", [10, 30, 80])
+const rocketB = new Rocket("LDSFJA32", [30, 40, 50, 50, 30, 10])
+
+const rockets = [rocketA, rocketB]
+
+rockets.forEach(rocket => console.log(
+  rocket.toString(), `- Max Power: ${rocket.maxPower}`
+))
+
+function testSpeed(id: number, rocket: Rocket, increments: number = 10): void {
+  console.log(`\nRockect ${id}... speeding up\n`)
+  console.log(`No Increment - Current Power: ${rocket.currentPower}`)
+
+  for (let i = 1; i <= increments; i++) {
+    rocket.speedUp()
+    console.log(`Increment ${i} - Current Power: ${rocket.currentPower}`)
+  }
+}
+
+testSpeed(1, rocketA)
+testSpeed(2, rocketB)
+*/
+var $rocket01 = {
     html: {
         root: document.querySelector('#rocket01'),
         idCode: document.querySelector('#rocket01 #idCode'),
@@ -9,7 +32,7 @@ const $rocket01 = {
     },
     instance: null
 };
-const $rocket02 = {
+var $rocket02 = {
     html: {
         root: document.querySelector('#rocket02'),
         idCode: document.querySelector('#rocket02 #idCode'),
@@ -40,7 +63,7 @@ function stop(e) {
     e.stopPropagation();
 }
 function getHTMLRocket($btn) {
-    const $root = $btn.parentElement.parentElement;
+    var $root = $btn.parentElement.parentElement;
     return $root.id === "rocket01" ? $rocket01 : $rocket02;
 }
 // Here $rocket type is "any" because $rocket hasn't an instance of Rocket, yet.
@@ -60,7 +83,7 @@ function performAction(action, $rocket) {
 }
 function click(e) {
     stop(e);
-    const $btn = e.target;
+    var $btn = e.target;
     if (!($btn instanceof HTMLButtonElement))
         return;
     performAction($btn.id, getHTMLRocket($btn));

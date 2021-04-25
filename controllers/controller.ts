@@ -1,5 +1,3 @@
-import { Rocket } from '../models/rocket.js'
-
 /*
 const rocketA = new Rocket("32WESSDS", [10, 30, 80])
 const rocketB = new Rocket("LDSFJA32", [30, 40, 50, 50, 30, 10])
